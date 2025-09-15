@@ -3,4 +3,15 @@
 *{
   font-family: Outfit;
 }
+:root {
+  --light-hover: #fcf4ff;
+  --dark-hover: #2a004a;
+  --dark-theme: #11001F;
 
+  --font-outfit: 'Outfit', sans-serif;
+  --font-ovo: 'Ovo', serif;
+}
+
+.font-ovo {
+  font-family: var(--font-ovo);
+}
