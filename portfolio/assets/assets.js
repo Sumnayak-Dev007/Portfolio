@@ -1,5 +1,9 @@
-import user_image from './user-image.png';
+
 import code_icon from './code-icon.png';
+import api_icon from './api_icon.png'
+import mysql_icon from './mysql_icon.png'
+import react_icon from './react_icon.jpeg'
+import server_icon from './server_icon.png'
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
@@ -11,8 +15,6 @@ import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
-import logo from './logo.png';
-import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import me from './me.jpg'
@@ -37,7 +39,7 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
 export const assets = {
-    user_image,
+
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -47,11 +49,13 @@ export const assets = {
     vscode,
     firebase,
     figma,
+    api_icon,
+    server_icon,
     git,
+    mysql_icon,
+    react_icon,
     mongodb,
     right_arrow_white,
-    logo,
-    logo_dark,
     mail_icon,
     mail_icon_dark,
     me,
@@ -77,41 +81,42 @@ export const assets = {
 };
 
 export const workData = [
+    
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'E-Commerece ',
+        description: 'Full Stack ',
+        bgImage: '/work-1.jpg',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Blogging Site',
+        description: 'Full Stack ',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Game Design',
+        description: 'Frontend project',
         bgImage: '/work-3.png',
     },
     {
         title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        description: 'Frontend project',
         bgImage: '/work-4.png',
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web Design', description: 'Web development is the process of building, programming...', link: '' },
+    { icon: assets.server_icon, title: 'Backend Development', description: 'Backend development is the foundation of any web application...', link: '' },
+    { icon: assets.ui_icon, title: 'UI/UX Design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
+    { icon: assets.api_icon, title: 'API Design', description: 'An API (Application Programming Interface) is a way for two software systems to communicate with each other....', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js, Python, Django, MySQL, C, C++' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Computer Applications' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mysql_icon, assets.react_icon, assets.git
 ];

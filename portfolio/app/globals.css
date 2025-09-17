@@ -15,3 +15,22 @@
 .font-ovo {
   font-family: var(--font-ovo);
 }
+
+.shadow-black {
+  box-shadow: 4px 4px 0 #000;
+}
+
+.shadow-white{
+  box-shadow: 4px 4px #fff;
+}
+
+
+.hover-shadow-black:hover {
+  box-shadow: 4px 4px 0 #000;
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem; /* optional */
+}
