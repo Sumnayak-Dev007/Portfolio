@@ -29,7 +29,7 @@ showcasing my expertise in full-stack  development.
                             {project.description}
                         </p>
                     </div>
-                    <div className='border rounded-full border-black  w-9  aspect-square flex items-center justify-between  shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
+                    <div className='border rounded-full border-black  w-9  aspect-square flex items-center justify-center  shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
                         <Image src={assets.send_icon} alt='' className='w-5'/>
                     </div>
                     </div>

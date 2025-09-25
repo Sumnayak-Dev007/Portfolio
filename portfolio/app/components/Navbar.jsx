@@ -36,7 +36,7 @@ const Navbar = () => {
 
             <span className='w-28 mr-14'>                      </span>
 
-            <ul className={`hidden md:flex item-cener gap-6 lg:gap-8 rounded-full px-12 py-3  bg-opacity-50 ${isScroll?"":"bg-white shadow-sm"}`}>
+            <ul className={`hidden md:flex item-cener gap-6 lg:gap-8 rounded-full px-12 py-3   ${isScroll?"":"bg-white shadow-sm bg-opacity-50"}`}>
             <li><a className='font-ovo' href="#top">Home</a></li>
             <li><a className='font-ovo' href="#about">About me</a></li>
             <li><a className='font-ovo' href="#services">Services</a></li>
