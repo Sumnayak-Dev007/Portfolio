@@ -1,6 +1,7 @@
 
 import code_icon from './code-icon.png';
 import api_icon from './api_icon.png'
+import logo from './logo.png'
 import mysql_icon from './mysql_icon.png'
 import react_icon from './react_icon.jpeg'
 import server_icon from './server_icon.png'
@@ -17,7 +18,7 @@ import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import me from './me.jpg'
+import me from './me.png'
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -48,6 +49,7 @@ export const assets = {
     project_icon_dark,
     vscode,
     firebase,
+    logo,
     figma,
     api_icon,
     server_icon,
