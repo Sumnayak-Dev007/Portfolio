@@ -28,6 +28,9 @@
 .hover-shadow-black:hover {
   box-shadow: 4px 4px 0 #000;
 }
+.hover-shadow-white:hover {
+  box-shadow: 4px 4px 0 #fff;
+}
 
 .grid-auto {
   display: grid;

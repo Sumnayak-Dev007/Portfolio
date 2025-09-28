@@ -12,7 +12,7 @@ const Work = () => {
 showcasing my expertise in full-stack  development.
       </p>
 
-      <div className='grid grid-auto my-10 gap-5'>
+      <div className='grid grid-auto my-10 gap-5 text-black'>
         {workData.map((project,index)=>(
             <div key={index} 
             className='aspect-square bg-no-repeat bg-cover  bg-center rounded-lg relative  cursor-pointer group'
@@ -39,8 +39,8 @@ showcasing my expertise in full-stack  development.
         ))}
       </div>
       <a href="" className='w-max flex items-center justify-center gap-2
-      text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[var(--light-hover)] duration-500'>
-        Show more <Image src={assets.right_arrow_bold} alt=''
+      text-white border-[0.5px] border-white rounded-full py-3 px-10 mx-auto my-20 hover:bg-[var(--dark-hover)] duration-500'>
+        Show more <Image src={assets.right_arrow_bold_dark} alt=''
         className='w-4'
         />
       </a>

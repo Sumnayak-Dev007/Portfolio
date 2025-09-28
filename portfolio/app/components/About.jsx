@@ -17,17 +17,17 @@ const About = () => {
                 I'm a Full Stack Developer with expertise in Django, Python, Tailwind CSS, SQL, JavaScript, jQuery, and Bootstrap. I specialize in building scalable, high-performance web applications that deliver seamless user experiences. With a passion for backend architecture and system optimization, I enjoy solving complex challenges and refining applications for efficiency and speed. I'm always eager to learn new technologies and improve my craft. Currently, I'm looking for exciting opportunities to contribute to innovative teams that value growth and creativity in tech.
             </p>
             <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
-                {infoList.map(({icon,iconDark,title,description},index)=>(
-                    <li className='border-[0.5px] border-gray-400 rounded-xl p-6 rounded-xl hover:bg-[var(--light-hover)] hover:-translate-y-2 duration-500 hover-shadow-black'
+                {infoList.map(({iconDark,title,description},index)=>(
+                    <li className='border-[0.5px] border-gray-400 rounded-xl p-6 rounded-xl hover:-translate-y-2 duration-500 hover-shadow-white hover:bg-[var(--dark-hover)]/50'
                     key={index}>
-                        <Image src={icon} alt='' className='w-7 mt--3'/>
-                        <h3 className='my-4 font-semibold text-gray-700'>{title}</h3>
-                        <p className='text-gray-600 text-sm'>{description}</p>
+                        <Image src={iconDark} alt='' className='w-7 mt--3'/>
+                        <h3 className='my-4 font-semibold text-white'>{title}</h3>
+                        <p className='text-white/80 text-sm'>{description}</p>
                     </li>
                 ))}
             </ul>
 
-            <h4 className='my-6 text-gray-700 font-ovo'>Tools I use</h4>
+            <h4 className='my-6 text-white/80 font-ovo'>Tools I use</h4>
             <ul className='flex items-center gap-3 sm:gap-5'>
                 {toolsData.map((tool,index)=>(
                     <li className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-2 duration-500' 
