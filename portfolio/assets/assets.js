@@ -2,8 +2,9 @@
 import code_icon from './code-icon.png';
 import api_icon from './api_icon.png'
 import logo from './logo.png'
-import mysql_icon from './mysql_icon.png'
-import react_icon from './react_icon.jpeg'
+import mysql_icon from './mysql.png'
+import cloud_icon_dark from './cloud_icon_dark.png'
+import react_icon from './react_icon.png'
 import server_icon from './server_icon.png'
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -50,6 +51,7 @@ export const assets = {
     firebase,
     logo,
     figma,
+    cloud_icon_dark,
     api_icon,
     server_icon,
     git,
@@ -114,7 +116,13 @@ export const serviceData = [
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js, Python, Django, MySQL, C, C++' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Computer Applications' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' },
+    { 
+    icon: assets.cloud_icon,   // <-- add a cloud/infra icon here
+    iconDark: assets.cloud_icon_dark, 
+    title: 'DevOps Tools', 
+    description: 'AWS, Nginx, Gunicorn, EC2, RDS' 
+  }
 ];
 
 export const toolsData = [
