@@ -88,21 +88,56 @@ export const workData = [
         title: 'E-Commerece ',
         description: 'Full Stack ',
         bgImage: '/work-1.jpg',
+        year: "2025",
+        tag: "E-commerce",
+    link: "https://example2.com",
+    features: [
+      "Cart, wishlist, checkout system, Orders",
+      "Razorpay/PayPal/COD payments",
+      "Downloadable invoices",
+      "Mobile-optimized, responsive UI",
+    ],
+    stack: ["Django", "Tailwind", "MySQL","JQuery",  "JavaScript", "AWS", ],
     },
     {
         title: 'Blogging Site',
         description: 'Full Stack ',
         bgImage: '/work-2.png',
+        year: "2025",
+        tag: "BlogSite",
+    link: "https://example2.com",
+    features: [
+      "Built a dynamic blogging platform having all the fratures to create, update, delete and read blogs under different categories.",
+      "features : media uploads, user profile management, search blogs and interactive commenting with emoji support. ",
+      
+    ],
+    stack: ["Django", "Tailwind", "MySQL", "JavaScript", "AWS",],
     },
     {
         title: 'Game Design',
         description: 'Frontend project',
         bgImage: '/work-3.png',
+        year: "2024",
+        tag: "Game Zone",
+    link: "https://example2.com",
+    features: [
+      "Built this browser-based game entirely in vanilla JavaScript",
+     
+    ],
+    stack: ["JavaScript"],
     },
     {
         title: 'UI/UX designing',
         description: 'Frontend project',
         bgImage: '/work-4.png',
+        year: "2024",
+        tag: "FLipBook",
+    link: "https://example2.com",
+    features: [
+      "A Book on the screen",
+    
+    ],
+    stack: ["HTML", "CSS"],
     },
 ]
 

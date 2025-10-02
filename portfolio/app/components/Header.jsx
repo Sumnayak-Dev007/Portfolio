@@ -34,7 +34,7 @@ const Header = () => {
 >
 
   <span className="mt-4 block text-gray-200 font-bold font-medium text-4xl sm:text-5xl md:text-6xl">
-   Hi, I am
+   Hi,I am
   </span>
 </motion.p>
 
