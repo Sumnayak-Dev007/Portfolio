@@ -40,7 +40,7 @@ const Navbar = () => {
             <li><a className='font-ovo font-semibold underline-animate' href="#top">Home</a></li>
             <li><a className='font-ovo font-semibold underline-animate' href="#about">About me</a></li>
             <li><a className='font-ovo font-semibold underline-animate' href="#services">Services</a></li>
-            <li><a className='font-ovo font-semibold underline-animate' href="#work">Projects</a></li>
+            <li><a className='font-ovo font-semibold underline-animate' href="#projects">Projects</a></li>
             <li><a className='font-ovo font-semibold underline-animate' href="#contact">Contact me</a></li>
             </ul>
 
@@ -62,7 +62,7 @@ const Navbar = () => {
         <li><a className='font-ovo' onClick={closeMenu} href="#top">Home</a></li>
             <li><a className='font-ovo' onClick={closeMenu} href="#about">About me</a></li>
             <li><a className='font-ovo' onClick={closeMenu} href="#services">Services</a></li>
-            <li><a className='font-ovo' onClick={closeMenu} href="#work">Projects</a></li>
+            <li><a className='font-ovo' onClick={closeMenu} href="#projects">Projects</a></li>
             <li><a className='font-ovo' onClick={closeMenu} href="#contact">Contact me</a></li>
       </ul>
 

@@ -83,63 +83,50 @@ export const assets = {
 };
 
 export const workData = [
-    
-    {
-        title: 'E-Commerece ',
-        description: 'Full Stack ',
-        bgImage: '/work-1.jpg',
-        year: "2025",
-        tag: "E-commerce",
+  {
+    title: 'E-Commerce',
+    description: 'Full Stack',
+    bgImage: '/work-1.jpg',
+    year: "2025",
+    tag: "E-commerce",
     link: "https://example2.com",
-    features: [
-      "Cart, wishlist, checkout system, Orders",
-      "Razorpay/PayPal/COD payments",
-      "Downloadable invoices",
-      "Mobile-optimized, responsive UI",
-    ],
-    stack: ["Django", "Tailwind", "MySQL","JQuery",  "JavaScript", "AWS", ],
-    },
-    {
-        title: 'Blogging Site',
-        description: 'Full Stack ',
-        bgImage: '/work-2.png',
-        year: "2025",
-        tag: "BlogSite",
+    features: "Developed a full-featured e-commerce platform that allows users to browse products, add items to their cart or wishlist, and complete purchases seamlessly through Razorpay, PayPal, or Cash on Delivery. ",
+    stack: ["Django", "Tailwind", "MySQL","JQuery", "JavaScript", "AWS"],
+  },
+  {
+    title: 'Blogging Site',
+    description: 'Full Stack',
+    bgImage: '/work-2.png',
+    year: "2025",
+    tag: "BlogSite",
     link: "https://example2.com",
-    features: [
-      "Built a dynamic blogging platform having all the fratures to create, update, delete and read blogs under different categories.",
-      "features : media uploads, user profile management, search blogs and interactive commenting with emoji support. ",
-      
-    ],
-    stack: ["Django", "Tailwind", "MySQL", "JavaScript", "AWS",],
-    },
-    {
-        title: 'Game Design',
-        description: 'Frontend project',
-        bgImage: '/work-3.png',
-        year: "2024",
-        tag: "Game Zone",
+    features: "Built a dynamic blogging platform having all the fratures to create, update, delete and read blogs under different categories.features : media uploads, user profile management, search blogs and interactive commenting with emoji support.",
+    stack: ["Django", "Tailwind", "MySQL", "JavaScript", "AWS"],
+  },
+  {
+    title: 'Game Design',
+    description: 'Frontend Project',
+    bgImage: '/work-3.png',
+    year: "2024",
+    tag: "Game Zone",
     link: "https://example2.com",
-    features: [
-      "Built this browser-based game entirely in vanilla JavaScript",
-     
-    ],
+    features: "Browser-based game built entirely with vanilla JavaScript, interactive gameplay, and engaging UI",
     stack: ["JavaScript"],
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'Frontend project',
-        bgImage: '/work-4.png',
-        year: "2024",
-        tag: "FLipBook",
+  },
+  {
+    title: 'UI/UX Designing',
+    description: 'Frontend Project',
+    bgImage: '/work-4.png',
+    year: "2024",
+    tag: "FlipBook",
     link: "https://example2.com",
-    features: [
-      "A Book on the screen",
-    
-    ],
+    features: "Interactive digital book interface built with HTML and CSS, showcasing realistic page flip animations",
     stack: ["HTML", "CSS"],
-    },
-]
+  }
+];
+
+
+
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web Design', description: 'Web development is the process of building, programming...', link: '' },

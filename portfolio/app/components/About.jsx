@@ -27,7 +27,7 @@ const About = () => {
     <div className='flex-1 flex flex-col items-center lg:items-start'>
       <p className='mb-10 max-w-4xl text-center lg:text-left text-white/80 font-nunito mx-auto leading-relaxed'>
         
-                I'm a Full Stack Developer with expertise in Django, Python, Tailwind CSS, SQL, JavaScript, jQuery, and Bootstrap. I specialize in building scalable, high-performance web applications that deliver seamless user experiences. With a passion for backend architecture and system optimization, I enjoy solving complex challenges and refining applications for efficiency and speed. I'm always eager to learn new technologies and improve my craft. Currently, I'm looking for exciting opportunities to contribute to innovative teams that value growth and creativity in tech.
+                I'm a Software Developer with expertise in Django, Python, Tailwind CSS, SQL, JavaScript, jQuery, and Bootstrap. I specialize in building scalable, high-performance web applications that deliver seamless user experiences. With a passion for backend architecture and system optimization, I enjoy solving complex challenges and refining applications for efficiency and speed. I'm always eager to learn new technologies and improve my craft. Currently, I'm looking for exciting opportunities to contribute to innovative teams that value growth and creativity in tech.
             </p>
             <div className="w-full flex flex-col items-center ">
             <motion.ul 
