@@ -116,7 +116,7 @@ export const workData = [
   {
     title: 'UI/UX Designing',
     description: 'Frontend Project',
-    bgImage: '/work-4.png',
+    bgImage: '/work5.png',
     year: "2024",
     tag: "FlipBook",
     link: "https://example2.com",
