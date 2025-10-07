@@ -82,3 +82,76 @@ body {
 .underline-animate.active::after {
   width: 105%;
 }
+
+/* Card Group - add a class like .proproject-card for project card div */
+.project-card {
+  position: relative;
+  border-bottom: 1px solid #9ca3af;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 
+    transform 1.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, box-shadow;
+  z-index: 1;
+}
+
+/* Border animation lines */
+.project-card::before,
+.project-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #9ca3af 60%, transparent 100%);
+  z-index: 10;
+  border-radius: 2px;
+  pointer-events: none;
+  transform: scaleX(0);
+  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card::before {
+  top: 0;
+  transform-origin: center left;
+}
+.project-card::after {
+  bottom: 0;
+  transform-origin: center right;
+}
+.project-card .side-border {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #9ca3af;
+  z-index: 10;
+  pointer-events: none;
+  border-radius: 2px;
+  transition: height 1.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s;
+  opacity: 0;
+  height: 0%;
+}
+.project-card .side-border.left { left: 0; transform-origin: bottom; }
+.project-card .side-border.right { right: 0; transform-origin: bottom; }
+
+/* Cinematic hover effect */
+.project-card:hover,
+.project-card:focus-within {
+  transform: perspective(1200px) translateZ(6px) translateY(-6px) scale(1.015);
+  box-shadow: 0 10px 36px 0 #2a2f44;
+  border-bottom-color: transparent;
+}
+.project-card:hover::before,
+.project-card:focus-within::before {
+  transform: scaleX(1);
+}
+.project-card:hover::after,
+.project-card:focus-within::after {
+  transform: scaleX(1);
+}
+.project-card:hover .side-border,
+.project-card:focus-within .side-border {
+  opacity: 1;
+  height: 100%;
+}

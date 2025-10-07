@@ -19,8 +19,10 @@ const Projects = () => {
     {workData.map((project, index) => (
       <div
         key={index}
-        className="group relative border-b border-gray-400 rounded-2xl overflow-hidden shadow-lg bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] flex items-stretch"
+        className="project-card group relative border-b border-gray-400 rounded-2xl overflow-hidden shadow-lg bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] flex items-stretch"
       >
+         <span className="side-border left"></span>
+  <span className="side-border right"></span>
         {/* Left: Text Content */}
         <div className="flex flex-col justify-between flex-1 p-8">
           {/* Tag */}
@@ -84,83 +86,52 @@ const Projects = () => {
 
 </section>
       {/* Mobile (slide container) */}
-       {/* Mobile / Small Screen Layout */}
-  <div className="flex
-    overflow-x-auto
-    snap-x
-    snap-mandatory
-    gap-4
-    px-4
-    scrollbar-hide
-    pb-6
-    mt-4
-    sm:grid
-    sm:grid-cols-2
-    sm:gap-4
-    sm:px-6
-    sm:overflow-x-visible">
-    {workData.map((project, index) => (
+<div className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 px-16 scrollbar-hide pb-6 mt-4">
+  {workData.map((project, index) => (
+    <div
+      key={index}
+      className="w-[280px] flex-shrink-0 bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] rounded-2xl snap-center shadow-lg border border-gray-700 transition-transform duration-300 transform hover:z-10 hover:-translate-y-2 hover:scale-[1.03]"
+    >
+      {/* Image */}
       <div
-        key={index}
-        className=" min-w-[90vw]
-        max-w-[90vw]
-        sm:min-w-0
-        sm:max-w-full
-        bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')]
-        rounded-2xl
-        snap-center
-        shadow-lg
-        border
-        border-gray-700
-        flex-shrink-0
-        transition-transform
-        duration-300
-        transform
-        hover:z-10
-        hover:-translate-y-2
-        hover:scale-[1.03]"
-      >
-        <div className="h-32 md:h-36 bg-center bg-no-repeat bg-contain rounded-t-2xl"
-          style={{ backgroundImage: `url(${project.bgImage})` }}
-          aria-label={`${project.title} image`}
-        />
-        <div className="p-4 flex flex-col">
-          <h2 className="text-white text-base font-bold mb-1 break-words">
-            {project.title}
-          </h2>
-          <p className="text-gray-400 text-xs mb-2 line-clamp-2 break-words">
-            {project.description}
-          </p>
-          <p className="text-sm text-gray-400 mb-4 leading-relaxed">
-            {project.features}
-          </p>
-          <div className="mb-3 flex gap-1 flex-wrap">
-            {project.stack.slice(0, 4).map((tech, i) => (
-              <span
-                key={i}
-                className="px-1 py-0.5 bg-gray-800 text-green-400 text-[8.5px] rounded-md break-words"
-              >
-                {tech}
-              </span>
-            ))}
-            {project.stack.length > 4 && (
-              <span className="px-2 py-0.5 bg-gray-700 text-white text-[10px] rounded-md">
-                +{project.stack.length - 4}
-              </span>
-            )}
-          </div>
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-auto inline-flex items-center gap-1 border border-green-600 text-green-600 text-xs font-medium px-3 py-2 rounded-lg hover:bg-green-600 hover:text-white transition"
-          >
-            Live Demo
-          </a>
+        className="h-32 md:h-36 bg-center bg-no-repeat bg-contain rounded-t-2xl"
+        style={{ backgroundImage: `url(${project.bgImage})` }}
+        aria-label={`${project.title} image`}
+      />
+
+      {/* Content */}
+      <div className="p-4 flex flex-col">
+        <h2 className="text-white text-base font-bold mb-1 break-words">{project.title}</h2>
+        <p className="text-gray-400 text-xs mb-2 line-clamp-2 break-words">{project.description}</p>
+        <p className="text-sm text-gray-400 mb-4 leading-relaxed break-words">
+          {project.features}
+        </p>
+
+        {/* Tech stack */}
+        <div className="mb-3 flex gap-1 flex-wrap">
+          {project.stack.slice(0, 4).map((tech, i) => (
+            <span key={i} className="px-1 py-0.5 bg-gray-800 text-green-400 text-[8.5px] rounded-md break-words">{tech}</span>
+          ))}
+          {project.stack.length > 4 && (
+            <span className="px-2 py-0.5 bg-gray-700 text-white text-[10px] rounded-md">+{project.stack.length - 4}</span>
+          )}
         </div>
+
+        {/* Live link */}
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-auto inline-flex items-center gap-1 border border-green-600  text-xs font-medium px-3 py-2 rounded-lg hover:bg-green-600 hover:text-white transition"
+        >
+          Live <Image alt="" src={assets.arrow_icon_dark} className="w-2" />
+        </a>
       </div>
-    ))}
-  </div>
+    </div>
+  ))}
+</div>
+
+
 
   {/* Swipe hint for mobile */}
   <div className="md:hidden flex items-center justify-between mt-2 px-6 text-gray-400 text-sm select-none">
