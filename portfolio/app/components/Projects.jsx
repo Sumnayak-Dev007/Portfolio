@@ -21,7 +21,7 @@ const Projects = () => {
     {workData.map((project, index) => (
       <div
         key={index}
-        className="project-card group relative border-b border-gray-400 rounded-2xl overflow-hidden shadow-lg bg-[#1c2030] bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] flex items-stretch"
+        className="project-card group relative border-b border-gray-400 rounded-2xl overflow-hidden shadow-lg bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] flex items-stretch"
       >
          <span className="side-border left"></span>
   <span className="side-border right"></span>
@@ -95,7 +95,7 @@ const Projects = () => {
   {workData.map((project, index) => (
     <div
       key={index}
-      className={`bg-[#1c2030] bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] w-[280px] flex-shrink-0 rounded-2xl snap-center shadow-lg border border-gray-700 transition-transform duration-300 ${activeIndex === index ? "is-active" : ""}`}
+      className={` bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] w-[280px] flex-shrink-0 rounded-2xl snap-center shadow-lg border border-gray-700 transition-transform duration-300 ${activeIndex === index ? "is-active" : ""}`}
     >
       <span className="side-border left"></span>
       <span className="side-border right"></span>
