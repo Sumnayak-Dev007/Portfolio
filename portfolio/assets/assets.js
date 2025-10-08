@@ -90,7 +90,7 @@ export const workData = [
     year: "2025",
     tag: "E-commerce",
     link: "https://example2.com",
-    features: "Developed a full-featured e-commerce platform that allows users to browse products, add items to their cart or wishlist, and complete purchases seamlessly through Razorpay, PayPal, or Cash on Delivery. ",
+    features: "Developed a full-featured e-commerce platform that allows users to browse products, add items to their cart or wishlist, and complete purchases seamlessly through Razorpay, PayPal, or Cash on Delivery also user can search any product with keywords. ",
     stack: ["Django", "Tailwind", "MySQL","JQuery", "JavaScript", "AWS"],
   },
   {
@@ -110,7 +110,7 @@ export const workData = [
     year: "2024",
     tag: "Game Zone",
     link: "https://example2.com",
-    features: "Browser-based game built entirely with vanilla JavaScript, interactive gameplay, and engaging UI",
+    features: "Browser-based game built entirely with vanilla JavaScript, interactive gameplay, and engaging UI.The opponent is the browser itself, giving users a realistic experience. The UI is highly responsive and optimized for both mobile and desktop.",
     stack: ["JavaScript"],
   },
   {
@@ -120,7 +120,7 @@ export const workData = [
     year: "2024",
     tag: "FlipBook",
     link: "https://example2.com",
-    features: "Interactive digital book interface built with HTML and CSS, showcasing realistic page flip animations",
+    features: "Interactive digital book interface built with HTML and CSS, showcasing realistic page flip animations giving user a realistic and immersive experience. The UI is highly responsive and optimized both for mobile and desktop ",
     stack: ["HTML", "CSS"],
   }
 ];

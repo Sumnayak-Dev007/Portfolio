@@ -155,3 +155,66 @@ body {
   opacity: 1;
   height: 100%;
 }
+
+
+.mobile-project-card {
+  position: relative;
+  border-bottom: 1px solid #374151;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition:
+    transform 1.2s cubic-bezier(0.4,0,0.2,1),
+    box-shadow 1s cubic-bezier(0.4,0,0.2,1);
+  z-index: 1;
+  background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+}
+.mobile-project-card::before,
+.mobile-project-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #9ca3af 65%, transparent 100%);
+  z-index: 10;
+  border-radius: 2px;
+  pointer-events: none;
+  transform: scaleX(0);
+  transition: transform 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+.mobile-project-card::before {
+  top: 0;
+  transform-origin: center left;
+}
+.mobile-project-card::after {
+  bottom: 0;
+  transform-origin: center right;
+}
+.mobile-project-card .side-border {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #9ca3af;
+  z-index: 10;
+  pointer-events: none;
+  border-radius: 2px;
+  opacity: 0;
+  height: 0%;
+  transition: height 1.2s cubic-bezier(0.4,0,0.2,1), opacity 0.5s;
+}
+.mobile-project-card .side-border.left { left: 0; transform-origin: bottom; }
+.mobile-project-card .side-border.right { right: 0; transform-origin: bottom; }
+.mobile-project-card.is-active {
+  transform: perspective(800px) translateZ(5px) translateY(-5px) scale(1.012);
+  box-shadow: 0 8px 28px 0 #000c;
+  border-bottom-color: transparent;
+}
+.mobile-project-card.is-active::before,
+.mobile-project-card.is-active::after {
+  transform: scaleX(1);
+}
+.mobile-project-card.is-active .side-border {
+  opacity: 1;
+  height: 100%;
+}
