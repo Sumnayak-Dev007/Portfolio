@@ -90,7 +90,7 @@ export const workData = [
     year: "2025",
     tag: "E-commerce",
     link: "https://example2.com",
-    features: "Developed a full-featured e-commerce platform that allows users to browse products, add items to their cart or wishlist, and complete purchases seamlessly through Razorpay, PayPal, or Cash on Delivery also user can search any product with keywords. ",
+    features: "An e-commerce platform where users can urchase desired products from different category with seamless payment options.",
     stack: ["Django", "Tailwind", "MySQL","JQuery", "JavaScript", "AWS"],
   },
   {
@@ -100,7 +100,7 @@ export const workData = [
     year: "2025",
     tag: "BlogSite",
     link: "https://example2.com",
-    features: "Built a dynamic blogging platform having all the fratures to create, update, delete and read blogs under different categories.features : media uploads, user profile management, search blogs and interactive commenting with emoji support.",
+    features: "A dynamic blogging platform for users to post their creative blogs and manage thier profile.",
     stack: ["Django", "Tailwind", "MySQL", "JavaScript", "AWS"],
   },
   {
@@ -110,17 +110,17 @@ export const workData = [
     year: "2024",
     tag: "Game Zone",
     link: "https://example2.com",
-    features: "Browser-based game built entirely with vanilla JavaScript, interactive gameplay, and engaging UI.The opponent is the browser itself, giving users a realistic experience. The UI is highly responsive and optimized for both mobile and desktop.",
+    features: "Browser-based fun game with interactive gameplay, and engaging UI.The opponent is the browser itself, giving users a realistic and immersive experience :)",
     stack: ["JavaScript"],
   },
   {
     title: 'UI/UX Designing',
     description: 'Frontend Project',
-    bgImage: '/work5.png',
+    bgImage: '/work-5.png',
     year: "2024",
     tag: "FlipBook",
     link: "https://example2.com",
-    features: "Interactive digital book interface built with HTML and CSS, showcasing realistic page flip animations giving user a realistic and immersive experience. The UI is highly responsive and optimized both for mobile and desktop ",
+    features: "A Flip Book showcasing realistic page flip animations giving user a realistic and immersive experience.",
     stack: ["HTML", "CSS"],
   }
 ];

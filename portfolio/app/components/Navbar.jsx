@@ -41,7 +41,7 @@ const Navbar = () => {
             <li><a className='font-ovo font-semibold underline-animate' href="#about">About me</a></li>
             <li><a className='font-ovo font-semibold underline-animate' href="#services">Services</a></li>
             <li><a className='font-ovo font-semibold underline-animate' href="#projects">Projects</a></li>
-            <li><a className='font-ovo font-semibold underline-animate' href="#contact">Contact me</a></li>
+            <li><a className='font-ovo font-semibold underline-animate' href="#contact">Contact</a></li>
             </ul>
 
             <div className='flex items-center gap-4'>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li><a className='font-ovo' onClick={closeMenu} href="#about">About me</a></li>
             <li><a className='font-ovo' onClick={closeMenu} href="#services">Services</a></li>
             <li><a className='font-ovo' onClick={closeMenu} href="#projects">Projects</a></li>
-            <li><a className='font-ovo' onClick={closeMenu} href="#contact">Contact me</a></li>
+            <li><a className='font-ovo' onClick={closeMenu} href="#contact">Contact</a></li>
       </ul>
 
    </nav>

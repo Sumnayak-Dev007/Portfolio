@@ -25,18 +25,18 @@ const Header = () => {
 
 
   {/* Right - Intro Text */}
-  <div className="text-center md:text-left flex flex-col items-center md:items-start ">
-    <motion.p
-  initial={{ opacity: 0, y: -15 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  className="text-gray-200 font-bold text-4xl sm:text-5xl md:text-6xl mb-3"
->
-
-  <span className="mt-4 block text-gray-200 font-bold font-medium text-4xl sm:text-5xl md:text-6xl">
-   Hi,I am
-  </span>
-</motion.p>
+ <div className="text-center md:text-left flex flex-col items-center md:items-start">
+  <motion.p
+  style={{
+    textShadow: "0 0 2.2px rgba(255,255,255,0.7)", // soft blur glow
+  }}
+    initial={{ opacity: 0, y: -15 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    className="text-gray-200 font-[680] ml-1 text-3xl sm:text-4xl md:text-5xl leading-tight tracking-tight font-sans mb-2"
+  >
+    Hi, I’m
+  </motion.p>
 
 <motion.h1
   initial={{ opacity: 0, y: -20 }}
@@ -44,7 +44,7 @@ const Header = () => {
   transition={{ duration: 0.7, delay: 0.2 }}
   className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight"
 >
-  <span className="bg-clip-text ">
+  <span className="bg-clip-text text-green-400">
     Suman Nayak
   </span>
 </motion.h1>
@@ -56,7 +56,7 @@ const Header = () => {
   className="text-2xl sm:text-3xl md:text-4xl mt-4 font-semibold text-gray-200"
 >
   
-  <span className="text-green-400">
+  <span className="">
     Software Developer
   </span>
 </motion.h2>
