@@ -128,7 +128,46 @@ body {
         line-height: 1.5;
         font-family:'Nunito', sans-serif;
     }
-
+.services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+        
+    } 
+        .services-list-div{
+     
+        
+        transition: transform 0.4s ease-in-out, border 0.3s ease-in-out, filter 0.3s ease-in-out;
+        transform-style: preserve-3d; 
+        will-change: transform;
+        backface-visibility: hidden;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;/* Initially no border */
+    }
+    .services-list-div:hover {
+        transform: translate3d(0, -10px, 20px) scale(1.01); /* Adds smooth 3D hover effect */
+        border: 2px solid green; /* Adds border on hover */
+        
+    }
+    
+    .services-list-h3 {
+        font-size: 28px;
+        color: #fff;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    .services-list-p {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Nunito', sans-serif;
+        color: aliceblue;
+        line-height: 1.4;
+    }
+    .services-list-div:hover p,
+    .services-list-div:hover h3 {
+        filter: contrast(1.2); /* Increases sharpness & readability */
+    }
 /* Card Group - add a class like .proproject-card for project card div */
 .project-card {
   position: relative;
