@@ -129,10 +129,10 @@ export const workData = [
 
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web Design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.server_icon, title: 'Backend Development', description: 'Backend development is the foundation of any web application...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX Design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.api_icon, title: 'API Design', description: 'An API (Application Programming Interface) is a way for two software systems to communicate with each other....', link: '' },
+    { icon: assets.web_icon, title: 'Web Design', description: "As a web developer, I create dynamic and functional websites using a combination of front-end and back-end technologies. I specialize in building responsive, user-friendly interfaces that enhance the user experience. Whether it's an e-commerce site, a blog, or a custom web application, I bring ideas to life through code.", link: '' },
+    { icon: assets.server_icon, title: 'Backend Development', description: "I specialize in building secure, scalable, and high-performing server-side systems that power modern websites and applications. From designing database structures and managing data flow to integrating authentication and business logic, I ensure smooth communication between the client and the server.",  link: '' },
+    { icon: assets.ui_icon, title: 'UI/UX Design', description: "UI/UX development focuses on creating the visual elements of a website or application. I specialize in turning design mockups into interactive interfaces using HTML, CSS, and JavaScript. My goal is to ensure that users have a seamless and enjoyable experience while interacting with your product.", link: '' },
+    { icon: assets.api_icon, title: 'API Design', description: "I design and build RESTful and modern APIs that act as a bridge between the frontend and backend, ensuring fast and secure data transmission. My approach focuses on creating well-structured endpoints, implementing authentication layers, and maintaining scalability for future integrations.",  link: '' },
 ]
 
 export const infoList = [
