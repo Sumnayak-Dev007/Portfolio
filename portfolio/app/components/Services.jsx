@@ -1,15 +1,27 @@
 import { assets, serviceData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import {motion} from "motion/react"
 
 const Services = () => {
   return (
     <div id='services' className='w-full  px-[12%] py-10 scroll-mt-20 ' >
       <h4 className='text-center mb-2 text-lg font-ovo'> What I Offer</h4>
-      <h2 className='text-center text-5xl font-ovo'>My Services</h2>
-      <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>
-        I have Designed multiple websites with dynamic UI/UX.
-      </p>
+      <motion.div
+              className="text-center mb-16"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-50px" }}
+            >
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 font-ovo">
+                My <span className="text-green-500">Services</span>
+              </h2>
+              <p className='text-gray-400 max-w-2xl mx-auto text-sm sm:text-base'>
+          I have Designed multiple websites with dynamic UI/UX.
+         </p>
+            </motion.div>
+      
       <div className='grid grid-auto gap-6 my-10'>
         {serviceData.map(({icon,title,description,link},index)=>(
           <div key={index}

@@ -5,27 +5,34 @@ import {motion} from "motion/react"
 
 const About = () => {
   return (
-    <motion.div id='about' className='w-full px-[12%] pb-10 pt-6 flex flex-col items-center'
+    <motion.div id='about' className='w-full md:px-[12%] px-[17px] pb-10 pt-6 flex flex-col items-center'
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:1}}
     >
       <span className='w-full py-10'>                        </span>
-      <motion.h2 
-      initial={{opacity: 0, y: -20}}
-      whileInView={ {opacity: 1, y: 0}}
-      transition={ {duration: 0.5, delay: 0.5}}
-      className='text-center text-5xl font-ovo'>About me</motion.h2>
-    
+      
+    <motion.div
+              className="about-text"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-50px" }}
+            >
+              <h2 className="text-3xl md:text-5xl font-bold  font-ovo">
+                About <span className="text-green-500">me</span>
+              </h2>
+              
+            </motion.div>
     
 
   <motion.div 
       initial={{opacity: 0}}
       whileInView={ {opacity: 1}}
       transition={ {duration: 0.8}}
-  className='flex w-full flex-col lg:flex-row items-center justify-center gap-20 mb-16 mt-12'>
-    <div className='flex-1 flex flex-col items-center lg:items-start'>
-      <p className='mb-10 max-w-4xl text-center lg:text-left text-white/80 font-nunito mx-auto leading-relaxed'>
+  className='flex w-full flex-col lg:flex-row items-center justify-center gap-20 mb-16 md:mt-7 '>
+    <div className='flex flex-col items-center lg:items-start'>
+      <p className='mb-10 text-left text-[1rem] lg:text-left text-white/80 about-text-p '>
         
                 I'm a Software Developer with expertise in Django, Python, Tailwind CSS, SQL, JavaScript, jQuery, and Bootstrap. I specialize in building scalable, high-performance web applications that deliver seamless user experiences. With a passion for backend architecture and system optimization, I enjoy solving complex challenges and refining applications for efficiency and speed. I'm always eager to learn new technologies and improve my craft. Currently, I'm looking for exciting opportunities to contribute to innovative teams that value growth and creativity in tech.
             </p>
@@ -34,7 +41,7 @@ const About = () => {
             initial={{opacity: 0, y: -20}}
             whileInView={ {opacity: 1, y: 0}}
             transition={ {duration: 0.5, delay: 0.5}}
-            className='grid grid-cols-1 sm:grid-cols-4 gap-6 max-w-4xl mx-auto'>
+            className='grid grid-cols-1 sm:grid-cols-4 gap-6   mx-4 md:mx-0 '>
                 {infoList.map(({iconDark,title,description},index)=>(
                     <motion.li
                     
@@ -48,19 +55,19 @@ const About = () => {
                 ))}
             </motion.ul>
 
-            <div className="mt-6 max-w-4xl w-full flex flex-col ">
+            <div className="mt-6 w-full flex flex-col ">
   <motion.h4 
   initial={{y:20, opacity: 0}}
       whileInView={ {y:0 , opacity: 1}}
-      transition={ {delay:1.3 , duration: 0.5}}
-  className="mb-4 text-white font-ovo lg:mr-4">Tools I use</motion.h4>
+      transition={ {delay:0.5 , duration: 0.5}}
+  className="mb-4 text-white ml-5 md:ml-0  sm:ml-0 md:max-w-full font-ovo lg:mr-4">Tools I use</motion.h4>
   <motion.ul
   
   initial={{opacity: 0}}
   whileInView={ {opacity: 1}}
-  transition={ {delay:1.5 , duration: 0.8}}
+  transition={ {delay:0.8 , duration: 0.8}}
       
-  className="flex flex-wrap justify-start items-center gap-3 sm:gap-5">
+  className="flex flex-wrap justify-start ml-5 md:ml-0  sm:ml-0 mx-auto md:mx-0 items-center gap-3 sm:gap-5">
     {toolsData.map((tool, index) => (
       <motion.li
       

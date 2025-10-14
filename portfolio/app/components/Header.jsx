@@ -18,7 +18,7 @@ const Header = () => {
   <Image
     src={assets.me}
     alt="Sumanayak"
-    className="rounded-full shadow-lg object-cover w-44 h-44 sm:w-55 sm:h-55 md:w-82 md:h-82"
+    className="rounded-full shadow-lg object-cover mt-2 md:mt-0 sm:mt-0  w-44 h-44 sm:w-55 sm:h-55 md:w-82 md:h-82"
   />
 </div>
 
@@ -31,9 +31,9 @@ const Header = () => {
     initial={{ opacity: 0, y: -15 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6 }}
-    className="text-white/90  font-[850] -ml-1  text-2xl font-mons sm:text-3xl md:text-4xl leading-tight tracking-tight mb-2"
+    className="home-content-h3"
   >
-    Hi, I'm
+    Hello, I am
     
   </motion.p>
 
@@ -43,7 +43,7 @@ const Header = () => {
   transition={{ duration: 0.7, delay: 0.2 }}
   className="text-5xl sm:text-6xl -ml-2 md:text-7xl font-extrabold leading-tight"
 >
-  <span className="bg-clip-text text-green-400">
+  <span className="bg-clip-text text-green-400 text-[40px] ml-1 md:text-[60px]">
     Suman Nayak
   </span>
 </motion.h1>
@@ -52,7 +52,7 @@ const Header = () => {
   initial={{ opacity: 0, y: -20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8, delay: 0.4 }}
-  className="text-2xl sm:text-3xl md:text-4xl mt-4 font-semibold text-gray-200"
+  className="text-2xl sm:text-3xl md:text-4xl mt-2 font-semibold text-gray-200"
 >
   
   <span className="">
@@ -65,7 +65,7 @@ const Header = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.3 }}
-      className="mt-4 text-gray-400 max-w-lg"
+      className="mt-4 text-gray-400 max-w-lg home-content-p "
     >
       I am a software developer dedicated to building applications that give reader a visual treat 
       with highly functional and intuitive design.

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import "tailwindcss";
 
 
@@ -66,6 +67,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem; /* optional */
 }
+.grid-auto-p{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1rem; /* optional */
+}
 .underline-animate {
   position: relative;
   display: inline-block;
@@ -86,6 +92,40 @@ body {
 .underline-animate.active::after {
   width: 105%;
 }
+
+.home-content-h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #faebff;
+    font-weight: 700;
+    margin-top: 22px;
+    opacity: 0;
+    
+}
+
+.about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15rem 7.2rem;
+        background-color: #222541;
+        
+    }
+    .about-text {
+        margin-bottom: 1.5rem;
+        font-size: 48px;
+       
+    }
+    .about-text-span{
+        color: #97d2ff;
+        font-family:'Nunito', sans-serif;
+    }
+    .about-text-p{
+        color: aliceblue;
+        font-size: 20px;
+        line-height: 1.5;
+        font-family:'Nunito', sans-serif;
+    }
 
 /* Card Group - add a class like .proproject-card for project card div */
 .project-card {
@@ -221,4 +261,30 @@ body {
 .mobile-project-card.is-active .side-border {
   opacity: 1;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+         .home-content-h3 {
+           
+            font-size: 28px;
+        }
+         .home-content-h1 {
+            font-size: 40px; /* Reduce font size for readability */
+        }
+        .home-content-p {
+            font-size: 16px;
+            
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        .about-text-p{
+            font-size: 1rem;
+            text-align:left;
+        }
+        .about-text h2{
+            font-size: 2.5rem;
+        }
+        .about-text span{
+            font-size: 2.5rem;
+        }
 }
