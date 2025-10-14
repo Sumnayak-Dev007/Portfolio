@@ -158,10 +158,9 @@ body {
         margin-bottom: 10px;
     }
     .services-list-p {
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 15px;
+        font-weight: 600;
         font-family: 'Nunito', sans-serif;
-        color: aliceblue;
         line-height: 1.4;
     }
     .services-list-div:hover p,
