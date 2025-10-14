@@ -27,22 +27,21 @@ const Header = () => {
   {/* Right - Intro Text */}
  <div className="text-center md:text-left flex flex-col items-center md:items-start">
   <motion.p
-  style={{
-    textShadow: "0 0 2.2px rgba(255,255,255,0.7)", // soft blur glow
-  }}
+  
     initial={{ opacity: 0, y: -15 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6 }}
-    className="text-gray-200 font-[680] ml-1 text-3xl sm:text-4xl md:text-5xl leading-tight tracking-tight font-sans mb-2"
+    className="text-white/90  font-[850] -ml-1  text-2xl font-mons sm:text-3xl md:text-4xl leading-tight tracking-tight mb-2"
   >
-    Hi, I’m
+    Hi, I'm
+    
   </motion.p>
 
 <motion.h1
   initial={{ opacity: 0, y: -20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.7, delay: 0.2 }}
-  className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight"
+  className="text-5xl sm:text-6xl -ml-2 md:text-7xl font-extrabold leading-tight"
 >
   <span className="bg-clip-text text-green-400">
     Suman Nayak
@@ -68,7 +67,7 @@ const Header = () => {
       transition={{ duration: 0.5, delay: 0.3 }}
       className="mt-4 text-gray-400 max-w-lg"
     >
-      I am dedicated to building applications that give reader a visual treat 
+      I am a software developer dedicated to building applications that give reader a visual treat 
       with highly functional and intuitive design.
     </motion.p>
 
