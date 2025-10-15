@@ -28,8 +28,8 @@ import { ExternalLink, Github } from "lucide-react"
 
 const Projects = () => {
   return (
-     <section id="projects" className="py-20 bg-slate-800/50">
-      <div className="max-w-7xl mx-auto py-10 scroll-mt-20">
+     <section id="projects" className="py-20 bg-[#22273a]">
+      <div className="w-full mx-auto py-10 scroll-mt-20">
         <motion.div
           className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ const Projects = () => {
         </motion.div>
 
         <motion.div
-          className="grid grid-auto-p gap-6 sm:gap-8 items-start"
+          className="grid grid-auto gap-6 p-4 services-list-p"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -55,7 +55,7 @@ const Projects = () => {
           {workData.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-gray-900 rounded-lg p-4 sm:p-6 hover:transform hover:scale-105 transition-all duration-300"
+              className="bg-gray-900 rounded-lg  p-6 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 max-w-sm mx-auto"
               variants={itemVariants}
               whileHover={{ y: -4, opacity: 0.95 }}
               transition={{ duration: 0.2, ease: "easeOut" }}

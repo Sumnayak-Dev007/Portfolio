@@ -128,43 +128,56 @@ body {
         line-height: 1.5;
         font-family:'Nunito', sans-serif;
     }
+    .services-list-p{
+        border-radius: 20px;
+        border: 2px solid transparent; 
+        
+        
+        
+    }
 .services-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        grid-gap: 40px;
-        margin-top: 50px;
+        border-radius: 20px;
+        transition: transform 0.4s ease-in-out, border 0.3s ease-in-out, filter 0.3s ease-in-out;
+        transform-style: preserve-3d;
+        border: 2px solid transparent; 
+        will-change: transform;
+        backface-visibility: hidden;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        perspective: 1000px;
         
     } 
-        .services-list-div{
+        .services-list div{
      
-        
-        transition: transform 0.4s ease-in-out, border 0.3s ease-in-out, filter 0.3s ease-in-out;
+        border: 2px solid transparent;
+        transition: transform 0.4s ease-in-out, border-color 0.3s ease-in-out, filter 0.3s ease-in-out;
         transform-style: preserve-3d; 
         will-change: transform;
         backface-visibility: hidden;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;/* Initially no border */
     }
-    .services-list-div:hover {
-        transform: translate3d(0, -10px, 20px) scale(1.01); /* Adds smooth 3D hover effect */
-        border: 2px solid green; /* Adds border on hover */
+    .services-list div:hover {
+        transform: translate3d(0, -10px, 20px) scale(1.01); /* your 3D hover effect */
+        border-color: green; /* only color changes, no layout shift */
         
     }
     
-    .services-list-h3 {
-        font-size: 28px;
+    .services-list h2 {
+        font-size: 20px;
         color: #fff;
         font-weight: 900;
         margin-bottom: 10px;
     }
-    .services-list-p {
+    .services-list p {
         font-size: 15px;
         font-weight: 600;
         font-family: 'Nunito', sans-serif;
         line-height: 1.4;
+        color: aliceblue;
     }
-    .services-list-div:hover p,
-    .services-list-div:hover h3 {
+    .services-list div:hover p,
+    .services-list div:hover h2 {
         filter: contrast(1.2); /* Increases sharpness & readability */
     }
 /* Card Group - add a class like .proproject-card for project card div */
