@@ -14,19 +14,13 @@ const Footer = () => {
   </div>
 
   <footer className="mx-[10%] mt-12 border-t border-gray-300 pt-6">
-    <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div className="flex sm:flex-row items-center justify-center gap-4">
       {/* Copyright */}
       <p className="text-sm sm:text-base md:text-lg tracking-wide text-center sm:text-left">
         © 2025 <span className="font-semibold">Sumanayak</span>. All rights reserved.
       </p>
 
-      {/* Social Links */}
-      <ul className="flex gap-6">
-        <li><a href="#" target="_blank" className="hover:text-gray-900 transition">GitHub</a></li>
-        <li><a href="#" target="_blank" className="hover:text-gray-900 transition">LinkedIn</a></li>
-        <li><a href="#" target="_blank" className="hover:text-gray-900 transition">Twitter</a></li>
-        <li><a href="#" target="_blank" className="hover:text-gray-900 transition">YouTube</a></li>
-      </ul>
+      
     </div>
   </footer>
 </div>
