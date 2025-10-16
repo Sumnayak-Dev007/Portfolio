@@ -20,15 +20,15 @@ const Services = () => {
               
             </motion.div>
       
-      <div className='grid grid-auto gap-6 services-list my-10'>
+      <div className='grid grid-auto justify-between services-list my-10'>
         {serviceData.map(({icon,title,description,link},index)=>(
           <div key={index}
           className='bg-[var(--dark-hover)] border border-gray-800 rounded-[20px]  px-6  py-12   cursor-pointer hover:bg-[var(--dark-hover)]'
           >
             <Image src={icon} alt='' className='w-10'/>
-            <h2 className='my-4 '>{title}</h2>
+            <h2 className='my-2 '>{title}</h2>
             <p className=''>{description}</p>
-            <a href={link} className='group flex items-center gap-2 text-sm mt-5 '>Read more
+            <a href={link} className='group flex items-center gap-2 text-sm mt-4 '>Read more
               <Image src={assets.right_arrow_bold_dark} alt='' className='w-4 transform transition-transform duration-200 group-hover:translate-x-2' />
             </a>
 

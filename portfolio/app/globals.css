@@ -67,7 +67,7 @@ body {
 .grid-auto {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem; /* optional */
+  gap: 1.4rem; /* optional */
 }
 .grid-auto-p{
   display: grid;
@@ -339,5 +339,8 @@ body {
         }
         .about-text span{
             font-size: 2.5rem;
+        }
+        .font-nunito{
+          font-size: 14px;
         }
 }
