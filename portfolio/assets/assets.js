@@ -133,7 +133,7 @@ export const serviceData = [
     { icon: assets.server_icon, title: 'Backend Development', description: "I specialize in building secure, scalable, and high-performing server-side systems that power modern websites ....",  link: '' }, //and applications. From designing database structures and managing data flow to integrating authentication and business logic, I ensure smooth communication between the client and the server.
     { icon: assets.ui_icon, title: 'UI/UX Design', description: "UI/UX development focuses on creating the visual elements of a website or application. I specialize in turning design ....", link: '' }, //mockups into interactive interfaces using HTML, CSS, and JavaScript. My goal is to ensure that users have a seamless and enjoyable experience while interacting with your product.
     { icon: assets.api_icon, title: 'API Design', description: "I design and build RESTful and modern APIs that act as a bridge between the frontend and backend, ensuring fast .....",  link: '' }, // and secure data transmission. My approach focuses on creating well-structured endpoints, implementing authentication layers, and maintaining scalability for future integrations.
-]
+];
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js, Python, Django, MySQL, C, C++' },

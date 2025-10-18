@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
+import SkillGrid from "./components/SkillGrid";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <Header/>
     <About/>
     <Services/>
+    <SkillGrid/>
     <Projects/>
     <Contact/>
     <Footer/>

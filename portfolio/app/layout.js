@@ -1,6 +1,7 @@
 
 import "./globals.css";
 
+
 import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({
@@ -17,6 +18,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth dark">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </head>
       <body
         className={`spaceGrotesk.variable antialiased leading-8 overflow-x-hidden dark:bg-[var(--dark-theme)] dark:text-white`}
       >
