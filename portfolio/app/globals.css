@@ -71,7 +71,7 @@ body {
 }
 .grid-auto-p{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
   gap: 1rem; /* optional */
 }
 .underline-animate {

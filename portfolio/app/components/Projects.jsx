@@ -46,7 +46,7 @@ const Projects = () => {
         </motion.div>
 
         <motion.div
-          className="grid grid-auto gap-6 p-4 services-list-p"
+          className="grid grid-auto-p gap-6 p-4 services-list-p"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

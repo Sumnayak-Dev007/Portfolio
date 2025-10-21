@@ -2,6 +2,7 @@
 import { Mail, Linkedin, X, Send } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
+import ContactGlobe from "./ContactGlobe";
 
 export default function Contact() {
   const formRef = useRef();
@@ -78,13 +79,7 @@ export default function Contact() {
       href:"prof.sumanatwork001@gmail.com"
     
     },
-    { 
-    icon: Linkedin, 
-    title: "LinkedIn", 
-    info: "https://www.linkedin.com/in/sumanknayak/", // Replace with your LinkedIn URL
-    isLink: true,
-    href: "https://www.linkedin.com/in/sumanknayak/", 
-  },
+    
   { 
     icon: X, 
     title: "X", 
@@ -139,7 +134,7 @@ export default function Contact() {
                       transition={{ duration: 0.4, delay: index * 0.05, ease: "easeOut" }}
                       viewport={{ once: true, margin: "-50px" }}
                     >
-                      <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-[36px] h-[36px] bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         <IconComponent className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -161,6 +156,7 @@ export default function Contact() {
                   );
                 })}
               </div>
+              {/* <ContactGlobe className="h-96 w-full" globeRadius={1} connectionCount={50} /> */}
             </div>
           </motion.div>
 
