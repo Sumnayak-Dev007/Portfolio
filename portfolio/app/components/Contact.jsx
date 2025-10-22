@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, X, Send } from "lucide-react";
+import { Mail, X, Send } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import ContactGlobe from "./ContactGlobe";
