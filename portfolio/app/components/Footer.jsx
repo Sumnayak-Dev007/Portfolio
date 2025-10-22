@@ -9,7 +9,7 @@ const Footer = () => {
     <Image src={assets.logo} alt=''  className='w-36 mx-auto nb-2'/>
     <div className="w-max flex items-center gap-2 mx-auto mb-6">
       <Image src={assets.mail_icon_dark} alt="mail icon" className="w-6" />
-      <span className="text-base">prof.sumanatwork001@gmail.com</span>
+      <span className="text-base">buildwithsumanayak@gmail.com</span>
     </div>
   </div>
 

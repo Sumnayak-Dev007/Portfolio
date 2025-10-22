@@ -74,9 +74,9 @@ export default function Contact() {
   const contactInfo = [
     { icon: Mail, 
       title: "Email", 
-      info: "prof.sumanatwork001@gmail.com",
+      info: "buildwithsumanayak@gmail.com",
       isLink: false,
-      href:"prof.sumanatwork001@gmail.com"
+      href:"buildwithsumanayak@gmail.com"
     
     },
     
