@@ -1,5 +1,6 @@
 'use client'
 
+
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -13,6 +14,7 @@ import SkillGrid from "./components/SkillGrid";
 export default function Home() {
   return (
     <>
+    
     <Navbar/>
     <Header/>
     <About/>
