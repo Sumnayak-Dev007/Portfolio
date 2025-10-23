@@ -89,7 +89,7 @@ export const workData = [
     bgImage: '/work-1.jpg',
     year: "2025",
     tag: "E-commerce",
-    link: "https://example2.com",
+    link: "https://flexcom.sumanayak.com/",
     features: "An e-commerce platform where users can purchase desired products with seamless payment options.",
     stack: ["Django", "Tailwind", "MySQL","JQuery", "JavaScript", "AWS"],
   },
@@ -109,7 +109,7 @@ export const workData = [
     bgImage: '/work-3.png',
     year: "2024",
     tag: "Game Zone",
-    link: "https://example2.com",
+    link: "https://flipbook-jmkh.onrender.com/",
     features: "Browser-based fun game with interactive gameplay, and engaging UI giving users a realistic and immersive experience :)",
     stack: ["JavaScript"],
   },
@@ -119,7 +119,7 @@ export const workData = [
     bgImage: '/work-4.png',
     year: "2024",
     tag: "FlipBook",
-    link: "https://example2.com",
+    link: "https://flipbook-jfru.onrender.com/",
     features: "A Flip Book showcasing realistic page flip animations giving user a realistic and immersive experience.",
     stack: ["HTML", "CSS"],
   }
@@ -129,10 +129,10 @@ export const workData = [
 
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web Design', description: "As a web developer, I create dynamic and functional websites using a combination of front-end and back-end technologies ..... ", link: '' }, //I specialize in building responsive, user-friendly interfaces that enhance the user experience. Whether it's an e-commerce site, a blog, or a custom web application, I bring ideas to life through code.
-    { icon: assets.server_icon, title: 'Backend Development', description: "I specialize in building secure, scalable, and high-performing server-side systems that power modern websites ....",  link: '' }, //and applications. From designing database structures and managing data flow to integrating authentication and business logic, I ensure smooth communication between the client and the server.
-    { icon: assets.ui_icon, title: 'UI/UX Design', description: "UI/UX development focuses on creating the visual elements of a website or application. I specialize in turning design ....", link: '' }, //mockups into interactive interfaces using HTML, CSS, and JavaScript. My goal is to ensure that users have a seamless and enjoyable experience while interacting with your product.
-    { icon: assets.api_icon, title: 'API Design', description: "I design and build RESTful and modern APIs that act as a bridge between the frontend and backend, ensuring fast .....",  link: '' }, // and secure data transmission. My approach focuses on creating well-structured endpoints, implementing authentication layers, and maintaining scalability for future integrations.
+    { icon: assets.web_icon, title: 'Web Design', description: "As a web developer, I create dynamic and functional websites using a combination of front-end and back-end technologies", link: '' }, //I specialize in building responsive, user-friendly interfaces that enhance the user experience. Whether it's an e-commerce site, a blog, or a custom web application, I bring ideas to life through code.
+    { icon: assets.server_icon, title: 'Backend Development', description: "I specialize in building secure, scalable, and high-performing server-side systems that power modern websites and apps",  link: '' }, //and applications. From designing database structures and managing data flow to integrating authentication and business logic, I ensure smooth communication between the client and the server.
+    { icon: assets.ui_icon, title: 'UI/UX Design', description: "UI/UX development focuses on creating the visual elements of a website or application. I specialize in turning design mockups into interactive UI", link: '' }, //mockups into interactive interfaces using HTML, CSS, and JavaScript. My goal is to ensure that users have a seamless and enjoyable experience while interacting with your product.
+    { icon: assets.api_icon, title: 'API Design', description: "I design and build RESTful and modern APIs that act as a bridge between the frontend and backend, ensuring fast and secure data transmission",  link: '' }, // and secure data transmission. My approach focuses on creating well-structured endpoints, implementing authentication layers, and maintaining scalability for future integrations.
 ];
 
 export const infoList = [

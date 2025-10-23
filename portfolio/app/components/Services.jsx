@@ -28,9 +28,9 @@ const Services = () => {
             <Image src={icon} alt='' className='w-10'/>
             <h2 className='my-2 '>{title}</h2>
             <p className=''>{description}</p>
-            <a href={link} className='group flex items-center gap-2 text-sm mt-4 '>Read more
+            {/* <a href={link} className='group flex items-center gap-2 text-sm mt-4 '>Read more
               <Image src={assets.right_arrow_bold_dark} alt='' className='w-4 transform transition-transform duration-200 group-hover:translate-x-2' />
-            </a>
+            </a> */}
 
           </div>
         ))}
