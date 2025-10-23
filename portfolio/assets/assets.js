@@ -99,7 +99,7 @@ export const workData = [
     bgImage: '/work-2.png',
     year: "2025",
     tag: "BlogSite",
-    link: "https://example2.com",
+    link: "https://blogsite.sumanayak.com/",
     features: "A dynamic blogging platform for users to post their creative blogs, manage and handle thier profile.",
     stack: ["Django", "Tailwind", "MySQL", "JavaScript", "AWS"],
   },
