@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`spaceGrotesk.variable antialiased leading-8 overflow-x-hidden dark:bg-[var(--dark-theme)] dark:text-white`}
+        className={`spaceGrotesk.variable antialiased leading-8 overflow-x-hidden bg-[var(--dark-theme)] text-white`}
       >
         {children}
       </body>
