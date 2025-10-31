@@ -84,7 +84,7 @@ export const assets = {
 
 export const workData = [
   {
-    title: 'E-Commerce',
+    title: 'Flexcom',
     description: 'Full Stack',
     bgImage: '/work-1.jpg',
     year: "2025",
@@ -92,6 +92,16 @@ export const workData = [
     link: "https://flexcom.sumanayak.com/",
     features: "An e-commerce platform where users can purchase desired products with seamless payment options.",
     stack: ["Django", "Tailwind", "MySQL","JQuery", "JavaScript", "AWS"],
+  },
+  {
+    title: 'Divinezon Books Hub App',
+    description: 'Frontend App',
+    bgImage: '/work-6.png',
+    year: "2025",
+    tag: "Books Hub",
+    link: "https://divinezon.com/",
+    features: "A Books Hub App that has huge collection of books. ",
+    stack: ["React JS", "TypeScript", "Chakra UI","RestAPI"],
   },
   {
     title: 'BlogSite',
