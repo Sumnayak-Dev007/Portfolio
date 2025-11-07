@@ -164,7 +164,7 @@ const Projects = () => {
       >
         <div className="mb-4 overflow-hidden rounded-md">
           <img
-            src="/divinezon-api-cover.png"
+            src="/work-7.png"
             alt="Divinezon BookHub API"
             className="w-full h-48 object-cover"
           />
