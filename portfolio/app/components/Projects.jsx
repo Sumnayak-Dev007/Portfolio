@@ -130,6 +130,94 @@ const Projects = () => {
         </div> */}
 
       </div>
+      {/* === API DEVELOPMENT SECTION === */}
+<section id="api-projects" className="py-20 bg-[#1b2032]">
+  <div className="w-full mx-auto py-10 scroll-mt-20">
+    <motion.div
+      className="text-center mb-10"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: true, margin: "-50px" }}
+    >
+      <h2 className="text-3xl md:text-5xl font-bold mb-4 font-ovo">
+        API <span className="text-green-500">Development</span>
+      </h2>
+      <p className="text-gray-400 md:w-8/12 w-10/12 mx-auto text-sm sm:text-base">
+        A collection of backend APIs built to power scalable web applications and structured data services.
+      </p>
+    </motion.div>
+
+    <motion.div
+      className="grid grid-cols-1 gap-6 p-4 "
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      {/* === Divinezon BookHub API Project Card === */}
+      <motion.div
+        className="bg-gray-900 rounded-lg p-6 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 max-w-sm mx-auto"
+        variants={itemVariants}
+        whileHover={{ y: -4, opacity: 0.95 }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
+      >
+        <div className="mb-4 overflow-hidden rounded-md">
+          <img
+            src="/divinezon-api-cover.png"
+            alt="Divinezon BookHub API"
+            className="w-full h-48 object-cover"
+          />
+        </div>
+
+        <h3 className="text-lg sm:text-xl font-bold mb-3 text-white">
+          Divinezon BookHub API
+        </h3>
+
+        <p className="text-gray-400 mb-4 text-sm leading-relaxed">
+          A robust RESTful API providing structured book, author, and genre data — designed to support
+          book-based applications. Includes search, filtering, and relationship endpoints for efficient data retrieval.
+        </p>
+
+        <div className="flex flex-wrap gap-2 mb-6">
+          {["Django REST Framework", "Python", "Swagger UI", "MySQL", "AWS EC2"].map((tech, index) => (
+            <span
+              key={index}
+              className="px-2 sm:px-3 py-1 bg-slate-800 text-green-600 text-xs rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <motion.a
+            href="https://rapidapi.com/buildwithsumanayak/api/books-hub-api-for-all-genres2"
+            target="_blank"
+            className="flex items-center justify-center gap-2 px-4 cursor-pointer py-2 bg-green-800 text-white rounded-lg hover:bg-green-600 transition-colors text-sm"
+            whileHover={{ opacity: 0.9 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+          >
+            <ExternalLink size={16} />
+            Live
+          </motion.a>
+
+          <motion.a
+            href="https://github.com/Sumnayak-Dev007//BooksAPI"
+            target="_blank"
+            className="flex items-center justify-center gap-2 px-4 py-2 border border-green-500 text-green-500 rounded-lg hover:bg-green-500 hover:text-white transition-colors text-sm"
+            whileHover={{ opacity: 0.9 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+          >
+            <Github size={16} />
+            Source Code
+          </motion.a>
+        </div>
+      </motion.div>
+    </motion.div>
+  </div>
+</section>
+
     </section>
   )
 }

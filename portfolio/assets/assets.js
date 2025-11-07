@@ -89,7 +89,7 @@ export const workData = [
     bgImage: '/work-1.jpg',
     year: "2025",
     tag: "E-commerce",
-    link: "https://flexcom.sumanayak.com/",
+    link: "https://flex-commerce.onrender.com/",
     features: "An e-commerce platform where users can purchase desired products with seamless payment options.",
     stack: ["Django", "Tailwind", "MySQL","JQuery", "JavaScript", "AWS"],
   },
