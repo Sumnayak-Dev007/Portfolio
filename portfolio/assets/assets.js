@@ -124,25 +124,26 @@ export const workData = [
     stack: ["Django", "Tailwind", "MySQL", "JavaScript", "AWS"],
   },
   {
+    title: 'Python Project',
+    description: 'API Project',
+    bgImage: '/work-8.jpg',
+    year: "2024",
+    tag: "Weather App",
+    link: "https://flipbook-jfru.onrender.com/",
+    features: "A Weather App in Python.",
+    stack: ["Python","DJango","HTML", "CSS"],
+  },
+  {
     title: 'Game Design',
     description: 'Frontend Project',
     bgImage: '/work-3.png',
     year: "2024",
     tag: "Game Zone",
-    link: "https://flipbook-jmkh.onrender.com/",
+    link: "https://django-weather-app-suc7.onrender.com/",
     features: "Browser-based fun game with interactive gameplay, and engaging UI giving users a realistic and immersive experience :)",
     stack: ["JavaScript"],
   },
-  {
-    title: 'UI/UX Designing',
-    description: 'Frontend Project',
-    bgImage: '/work-4.png',
-    year: "2024",
-    tag: "FlipBook",
-    link: "https://flipbook-jfru.onrender.com/",
-    features: "A Flip Book showcasing realistic page flip animations giving user a realistic and immersive experience.",
-    stack: ["HTML", "CSS"],
-  }
+  
 ];
 
 

@@ -118,7 +118,7 @@ export default function Contact() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
-          className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
+          className="text-gray-400 max-w-4xl mx-auto text-sm sm:text-base">
             Whether it's a project, collaboration, or just a tech chat, I'm all ears.
           </motion.p>
         </motion.div>
