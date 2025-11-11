@@ -90,7 +90,11 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 scroll-mt-20">
+    <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    id="contact" className="py-20 px-4 scroll-mt-20">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -99,12 +103,24 @@ export default function Contact() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Let's <span className="text-green-600">work together</span> 
-          </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-            Whether it's work, collaboration, or a tech chat. I'm just a message away.
-          </p>
+          <motion.h2
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          className="text-3xl md:text-4xl font-bold mb-4">
+            Let's <motion.span 
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="text-green-600">work together</motion.span> 
+          </motion.h2>
+          <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
+          className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
+            Whether it's a project, collaboration, or just a tech chat, I'm all ears.
+          </motion.p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
@@ -118,9 +134,13 @@ export default function Contact() {
           >
             <div className="lg:sticky lg:top-24">
               <h3 className="text-xl sm:text-2xl font-bold mb-6 lg:mb-8">Get in touch</h3>
-              <p className="text-gray-400 mb-8 text-sm sm:text-base leading-relaxed">
+              <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.7, duration: 0.5 }}
+              className="text-gray-400 mb-8 text-sm sm:text-base leading-relaxed">
                 I'm open to job offers. Got a project or idea? Reach out anytime.
-              </p>
+              </motion.p>
 
               <div className="space-y-6">
                 {contactInfo.map((contact, index) => {
@@ -134,10 +154,18 @@ export default function Contact() {
                       transition={{ duration: 0.4, delay: index * 0.05, ease: "easeOut" }}
                       viewport={{ once: true, margin: "-50px" }}
                     >
-                      <div className="w-[36px] h-[36px] bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <motion.div 
+                      initial={{ y: 100, opacity: 0 }}
+                      whileInView={ { y: 0, opacity: 1 }}
+                      transition={{ delay: 1.3, duratidn: 0.6 }}
+                      className="w-[36px] h-[36px] bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         <IconComponent className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
+                      </motion.div>
+                      <motion.div
+                      initial={{ y: 100, opacity: 0 }}
+                      whileInView={ { y: 0, opacity: 1 }}
+                      transition={{ delay: 1.3, duratidn: 0.6 }}
+                      >
                         <h4 className="font-semibold text-sm sm:text-base">{contact.title}</h4>
                         {contact.isLink ? (
             <a
@@ -151,7 +179,7 @@ export default function Contact() {
           ) : (
             <p className="text-gray-400 text-sm sm:text-base">{contact.info}</p>
           )}
-                      </div>
+                      </motion.div>
                     </motion.div>
                   );
                 })}
@@ -169,9 +197,16 @@ export default function Contact() {
             viewport={{ once: true, margin: "-50px" }}
           >
             <div className="bg-slate-800 p-6 sm:p-8 rounded-lg">
-              <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
+              <motion.form
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.9, duration: 0.5 }}
+              ref={formRef} onSubmit={sendEmail} className="space-y-6">
                 <div className="grid grid-cols-1 gap-6">
-                  <input
+                  <motion.input
+                    initial={{ x: -50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 1.1, duration: 0.6 }}
                     type="text"
                     name="name"
                     value={formData.name}
@@ -181,7 +216,10 @@ export default function Contact() {
                   />
                   {errors.name && <p className="text-red-600 text-sm mt-1">{errors.name}</p>}
 
-                  <input
+                  <motion.input
+                    initial={{ x: 50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 1.1, duration: 0.6 }}
                     type="email"
                     name="email"
                     value={formData.email}
@@ -191,7 +229,10 @@ export default function Contact() {
                   />
                   {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email}</p>}
 
-                  <input
+                  <motion.input
+                    initial={{ x: -50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 1.1, duration: 0.6 }}
                     type="text"
                     name="subject"
                     value={formData.subject}
@@ -201,7 +242,10 @@ export default function Contact() {
                   />
                   {errors.subject && <p className="text-red-600 text-sm mt-1">{errors.subject}</p>}
 
-                  <textarea
+                  <motion.textarea
+                    initial={{ y: 100, opacity: 0 }}
+                    whileInView={ { y: 0, opacity: 1 }}
+                    transition={{ delay: 1.3, duratidn: 0.6 }}
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
@@ -222,7 +266,10 @@ export default function Contact() {
                   </p>
                 )}
 
-                <button
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+
                   type="submit"
                   disabled={isSending}
                   className={`w-full ${
@@ -243,12 +290,12 @@ export default function Contact() {
                       Send Message
                     </>
                   )}
-                </button>
-              </form>
+                </motion.button>
+              </motion.form>
             </div>
           </motion.div>
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }

@@ -6,29 +6,37 @@ import { useState } from "react"
 import { motion } from "motion/react"
 import { ExternalLink, Github } from "lucide-react"
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.06,
-        ease: "easeOut",
-      },
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.18,   // clear one-by-one delay
+      ease: "easeOut",
     },
-  }
+  },
+};
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.4, ease: "easeOut" },
+const itemVariants = {
+  hidden: { opacity: 0, y: 100 },  // small lift so it's smooth
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease:  "easeInOut", // smooth cubic-bezier
     },
-  }
+  },
+};
+
+
 
 const Projects = () => {
   return (
-     <section id="projects" className="py-20 bg-[#22273a]">
+     <motion.div 
+     initial={ { opacity: 0 }}
+     whileInView={{ opacity: 1 }}
+     transition={{ duration: 1 }}
+     id="projects" className="py-20 bg-[#22273a]">
       <div className="w-full mx-auto py-10 scroll-mt-20">
         <motion.div
           className="text-center mb-10"
@@ -37,28 +45,39 @@ const Projects = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 font-ovo">
+          <motion.h2
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+
+          className="text-3xl md:text-5xl font-bold mb-4 font-ovo">
             My <span className="text-green-500">Projects</span>
-          </h2>
-          <p className="text-gray-400 md:w-8/12 w-10/12 mx-auto text-sm sm:text-base">
+          </motion.h2>
+          <motion.p 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
+          className="text-gray-400 md:w-8/12 w-10/12 mx-auto text-sm sm:text-base">
             Explore these collection of projects I've built, ranging from responsive frontends to full-stack platforms. Each one helped me sharpen my craft.
-          </p>
+          </motion.p>
         </motion.div>
 
         <motion.div
           className="grid grid-auto-p gap-6 p-4 services-list-p"
           variants={containerVariants}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          whileInView="show"
+          viewport={{ once: true, margin: "-40px" }}
         >
           {workData.map((project, index) => (
             <motion.div
               key={index}
               className="bg-gray-900 rounded-lg  p-6 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 max-w-sm mx-auto"
               variants={itemVariants}
-              whileHover={{ y: -4, opacity: 0.95 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
+              initial={{ y: 100, opacity: 0 }}            // start hidden + down
+              whileInView={{ y: 0, opacity: 1 }}          // animate when scrolled into view
+              transition={{ duration: 1, ease: "easeInOut" }}
+              viewport={{ once: false, amount: 0.2 }}    
             >
               {/* IMAGE SECTION */}
               <div className="mb-4 overflow-hidden rounded-md">
@@ -105,11 +124,12 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   className="flex items-center justify-center gap-2 px-4 cursor-pointer py-2 bg-green-800 text-white rounded-lg hover:bg-green-600 transition-colors text-sm"
-                  whileHover={{ opacity: 0.9 }}
-                  transition={{ duration: 0.2, ease: "easeOut" }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ delay: 1.1, duration: 0.5 }}
                 >
                   <ExternalLink size={16} />
-                  Live Demo
+                  Live 
                 </motion.a>
               </div>
             </motion.div>
@@ -131,7 +151,7 @@ const Projects = () => {
 
       </div>
       {/* === API DEVELOPMENT SECTION === */}
-<section id="api-projects" className="py-20 bg-[#1b2032]">
+{/* <section id="api-projects" className="py-20 bg-[#1b2032]">
   <div className="w-full mx-auto py-10 scroll-mt-20">
     <motion.div
       className="text-center mb-10"
@@ -155,7 +175,7 @@ const Projects = () => {
       whileInView="visible"
       viewport={{ once: true }}
     >
-      {/* === Divinezon BookHub API Project Card === */}
+      
       <motion.div
         className="bg-gray-900 rounded-lg p-6 sm:p-6 hover:transform hover:scale-105 transition-all duration-300 max-w-sm mx-auto"
         variants={itemVariants}
@@ -216,9 +236,9 @@ const Projects = () => {
       </motion.div>
     </motion.div>
   </div>
-</section>
+</section> */}
 
-    </section>
+    </motion.div>
   )
 }
 

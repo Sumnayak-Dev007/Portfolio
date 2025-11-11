@@ -28,7 +28,10 @@ export default function SkillGrid() {
   };
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={ { duration: 1 }}
       id="skills"
       className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-20"
     >
@@ -40,20 +43,35 @@ export default function SkillGrid() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true, margin: "-50px" }}
       >
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 font-ovo">
+        <motion.h2
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 font-ovo">
           Tech <span className="text-green-500">Stack</span>
-        </h2>
-        <p className="text-gray-400 md:w-7/12 sm:w-9/12 w-10/12 mx-auto text-sm sm:text-base">
+        </motion.h2>
+        <motion.p 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.7, duration: 0.5 }}
+        className="text-gray-400 md:w-7/12 sm:w-9/12 w-10/12 mx-auto text-sm sm:text-base">
           Programming languages, frameworks, and apps I work with.
-        </p>
+        </motion.p>
       </motion.div>
 
       {/* Skills Grid */}
-      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
+      <motion.div 
+      initial={{opacity: 0}}
+  whileInView={ {opacity: 1}}
+  transition={ {delay:0.8 , duration: 0.8}}
+      className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
         {skills.map((skill) => {
           const isActive = activeSkill === skill.name;
           return (
-            <div
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={ { y: 0, opacity: 1 }}
+              transition={{ delay: 1, duratidn: 1.5 }}
               key={skill.name}
               className="group flex flex-col items-center relative"
               onClick={() => handleClick(skill.name)}
@@ -83,10 +101,10 @@ export default function SkillGrid() {
                     }`}
                 ></i>
               </div>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

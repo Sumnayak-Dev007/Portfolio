@@ -5,8 +5,16 @@ import {motion} from "motion/react"
 
 const Services = () => {
   return (
-    <div id='services' className=' bg-[#252a41] w-full  px-[8%] py-10 scroll-mt-20 ' >
-      <h4 className='text-center mb-2 text-lg font-ovo'> What I Offer</h4>
+    <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={ { duration: 1 }}
+    id='services' className=' bg-[#252a41] w-full  px-[8%] py-10 scroll-mt-20 ' >
+      <motion.h4
+      initial={{ y: -20, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.3, duration: 0.5 }}
+      className='text-center mb-2 text-lg font-ovo'> What I Offer</motion.h4>
       <motion.div
               className="text-center mb-16"
               initial={{ opacity: 0, y: 20 }}
@@ -14,13 +22,21 @@ const Services = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               viewport={{ once: true, margin: "-50px" }}
             >
-              <h2 className="text-3xl md:text-5xl font-bold  mb-4 font-ovo">
+              <motion.h2
+               initial={{ y: -20, opacity: 0 }}
+               whileInView={{ y: 0, opacity: 1 }}
+               transition={{ delay: 0.5, duration: 0.5 }}
+              className="text-3xl md:text-5xl font-bold  mb-4 font-ovo">
                 My <span className="text-green-500">Services</span>
-              </h2>
+              </motion.h2>
               
             </motion.div>
       
-      <div className='grid grid-auto justify-between services-list my-10'>
+      <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.9, duration: 0.6 }}
+      className='grid grid-auto justify-between services-list my-10'>
         {serviceData.map(({icon,title,description,link},index)=>(
           <div key={index}
           className='bg-[var(--dark-hover)] border border-gray-800 rounded-[20px]  px-6  py-12   cursor-pointer hover:bg-[var(--dark-hover)]'
@@ -34,9 +50,9 @@ const Services = () => {
 
           </div>
         ))}
-      </div>
+      </motion.div>
       <div className="services_model"></div>
-    </div>
+    </motion.div>
   )
 }
 

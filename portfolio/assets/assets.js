@@ -94,6 +94,16 @@ export const workData = [
     stack: ["Django", "Tailwind", "MySQL","JQuery", "JavaScript", "AWS"],
   },
   {
+    title: 'BooksHub API',
+    description: 'API Development',
+    bgImage: '/work-7.png',
+    year: "2025",
+    tag: "Books Hub",
+    link: "https://rapidapi.com/buildwithsumanayak/api/books-hub-api-for-all-genres2/",
+    features: "A robust RESTful API providing structured book, author, and genre data — designed to support book-based applications.",
+    stack: ["DRF","MySQL"],
+  },
+  {
     title: 'Divinezon Books Hub App',
     description: 'Frontend App',
     bgImage: '/work-6.png',
