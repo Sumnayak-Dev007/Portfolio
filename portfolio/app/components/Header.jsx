@@ -56,7 +56,7 @@ const Header = () => {
 >
   
   <span className="">
-    Software Developer
+    Software Engineer 
   </span>
 </motion.h2>
 
@@ -67,7 +67,7 @@ const Header = () => {
       transition={{ duration: 0.5, delay: 0.3 }}
       className="mt-4 text-gray-400 max-w-lg home-content-p "
     >
-      I am a software developer dedicated to building applications that give reader a visual treat 
+      I am a software engineer dedicated to building applications that give reader a visual treat 
       with highly functional and intuitive design.
     </motion.p>
 
