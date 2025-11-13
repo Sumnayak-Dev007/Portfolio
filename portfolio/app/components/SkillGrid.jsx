@@ -5,6 +5,7 @@ const skills = [
   { name: "Python", iconClass: "devicon-python-plain" },
   { name: "Tailwind", iconClass: "devicon-tailwindcss-plain" },
   { name: "JavaScript", iconClass: "devicon-javascript-plain" },
+  { name: "TypeScript", iconClass: "devicon-typescript-plain" },
   { name: "HTML", iconClass: "devicon-html5-plain" },
   { name: "Bootstrap", iconClass: "devicon-bootstrap-plain" },
   { name: "ReactJS", iconClass: "devicon-react-original" },
@@ -17,7 +18,7 @@ const skills = [
   { name: "GitHub", iconClass: "devicon-github-original" },
   { name: "Nginx", iconClass: "devicon-nginx-original" },
   { name: "jQuery", iconClass: "devicon-jquery-plain" },
-  { name: "PostgreSQL", iconClass: "devicon-postgresql-plain" },
+
 ];
 
 export default function SkillGrid() {
