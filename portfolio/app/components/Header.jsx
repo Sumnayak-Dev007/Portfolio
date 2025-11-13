@@ -116,7 +116,7 @@ const Header = () => {
     stiffness: 50,
     damping: 40,
   }}
-      href="/Sumanayak's_Resume.pdf" download className="px-10 py-3  border-2 rounded-full border-green-400 flex items-center gap-2 text-black bg-white hover:bg-green-200 transition-all" > 
+      href="/Suman K Nayak's Resume.pdf" download className="px-10 py-3  border-2 rounded-full border-green-400 flex items-center gap-2 text-black bg-white hover:bg-green-200 transition-all" > 
       Resume <Image src={assets.download_icon} className="w-4" alt="download" />
       </motion.a>
       
