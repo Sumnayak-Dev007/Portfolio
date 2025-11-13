@@ -206,7 +206,7 @@ export default function Contact() {
                   <motion.input
                     initial={{ x: -50, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 1.1, duration: 0.6 }}
+                    transition={{ delay: 0.5, duration: 0.6 }}
                     type="text"
                     name="name"
                     value={formData.name}
@@ -219,7 +219,7 @@ export default function Contact() {
                   <motion.input
                     initial={{ x: 50, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 1.1, duration: 0.6 }}
+                    transition={{ delay: 0.5, duration: 0.6 }}
                     type="email"
                     name="email"
                     value={formData.email}
@@ -232,7 +232,7 @@ export default function Contact() {
                   <motion.input
                     initial={{ x: -50, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 1.1, duration: 0.6 }}
+                    transition={{ delay: 0.5, duration: 0.6 }}
                     type="text"
                     name="subject"
                     value={formData.subject}
@@ -245,7 +245,7 @@ export default function Contact() {
                   <motion.textarea
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={ { y: 0, opacity: 1 }}
-                    transition={{ delay: 1.3, duratidn: 0.6 }}
+                    transition={{ delay: 0.5, duratidn: 0.6 }}
                     name="message"
                     value={formData.message}
                     onChange={handleChange}

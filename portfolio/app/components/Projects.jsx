@@ -124,9 +124,6 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   className="flex items-center justify-center gap-2 px-4 cursor-pointer py-2 bg-green-800 text-white rounded-lg hover:bg-green-600 transition-colors text-sm"
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ delay: 1.1, duration: 0.5 }}
                 >
                   <ExternalLink size={16} />
                   Live 

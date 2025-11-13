@@ -61,17 +61,11 @@ export default function SkillGrid() {
 
       {/* Skills Grid */}
       <motion.div 
-      initial={{opacity: 0}}
-  whileInView={ {opacity: 1}}
-  transition={ {delay:0.8 , duration: 0.8}}
       className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
         {skills.map((skill) => {
           const isActive = activeSkill === skill.name;
           return (
             <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              whileInView={ { y: 0, opacity: 1 }}
-              transition={{ delay: 1, duratidn: 1.5 }}
               key={skill.name}
               className="group flex flex-col items-center relative"
               onClick={() => handleClick(skill.name)}
