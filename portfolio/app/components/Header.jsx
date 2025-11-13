@@ -12,13 +12,16 @@ const Header = () => {
  <section className="w-full px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-48 min-h-screen flex flex-col md:flex-row md:justify-between items-center gap-12 pt-20">
   <div className="flex justify-center items-center md:justify-start flex-col md:flex-row ml-4 sm:ml-8 relative">
   {/* Green border arc */}
-  <div className="absolute -left-5 sm:-left-8 md:-left-10 w-0 h-0 sm:w-60 sm:h-60 md:w-88 md:h-88 border-8 border-green-400 rounded-l-full border-r-0 border-b-0 border-t-0"></div>
+  <div className="absolute -left-5 sm:-left-8 md:-left-10 w-0 h-0 sm:w-56 sm:h-58 md:w-72 md:h-70 lg:w-80  lg:h-88
+                   border-[8px] border-green-400 
+                 rounded-l-full border-r-0 border-b-0 border-t-0"></div>
 
   {/* Profile image */}
   <Image
     src={assets.me}
     alt="Sumanayak"
-    className="rounded-full shadow-lg object-cover mt-2 md:mt-0 sm:mt-0  w-44 h-44 sm:w-55 sm:h-55 md:w-82 md:h-82"
+    sizes="(max-width: 1024px) 50vw, 25vw"
+    className="relative rounded-full shadow-lg object-cover mt-2 md:mt-0 sm:mt-0 aspect-square  w-42 sm:w-52 md:w-68 lg:w-75 xl:w-80"
   />
 </div>
 

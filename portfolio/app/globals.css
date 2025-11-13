@@ -63,7 +63,17 @@ body {
 .hover-shadow-white:hover {
   box-shadow: 4px 4px 0 #fff;
 }
+.arc-container {
+  width: min(80vw, 400px); /* adjusts with screen but keeps proportion */
+  aspect-ratio: 1 / 1; /* ensures it's always a perfect square */
+  margin: 0 auto;
+}
 
+.arc-container svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .grid-auto {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
