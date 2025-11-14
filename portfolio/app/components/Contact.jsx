@@ -119,7 +119,7 @@ export default function Contact() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
           className="text-gray-400 max-w-4xl mx-auto text-sm sm:text-base">
-            Whether it's a project, collaboration, or just a tech chat, I'm all ears.
+            Whether it's a project, collaboration, or tech discussion — feel free to reach out using the form below.
           </motion.p>
         </motion.div>
 

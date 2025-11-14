@@ -164,7 +164,7 @@ export const infoList = [
     icon: assets.cloud_icon,   // <-- add a cloud/infra icon here
     iconDark: assets.cloud_icon_dark, 
     title: 'DevOps Tools', 
-    description: 'AWS, Nginx, Gunicorn, GitHub Actions' 
+    description: 'AWS, Nginx, Gunicorn, GitHub Actions, Docker' 
   }
 ];
 
