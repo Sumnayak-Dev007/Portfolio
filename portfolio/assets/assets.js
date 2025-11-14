@@ -121,7 +121,7 @@ export const workData = [
     tag: "BlogSite",
     link: "https://blogsite.sumanayak.com/",
     features: "A dynamic blogging platform for users to post their creative blogs, manage and handle thier profile.",
-    stack: ["Django", "Tailwind", "MySQL", "JavaScript", "AWS"],
+    stack: ["Django", "Tailwind", "MySQL", "JavaScript", "AWS","Linux"],
   },
   {
     title: 'Python Project',

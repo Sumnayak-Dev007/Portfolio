@@ -16,8 +16,9 @@ const skills = [
   { name: "C++", iconClass: "devicon-cplusplus-plain" },
   { name: "Git", iconClass: "devicon-git-plain" },
   { name: "GitHub", iconClass: "devicon-github-original" },
-  { name: "Nginx", iconClass: "devicon-nginx-original" },
+  { name: "Docker", iconClass: "devicon-docker-plain" },
   { name: "jQuery", iconClass: "devicon-jquery-plain" },
+  { name: "Linux", iconClass: "devicon-linux-plain" },
 
 ];
 
