@@ -19,7 +19,7 @@ import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import me from './me.jpg'
+import me from './me.png'
 import download_icon from './download-icon.png';
 import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
